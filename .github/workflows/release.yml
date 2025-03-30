@@ -53,9 +53,9 @@ jobs:
 
       - name: Get the release version, removing the v from the tag
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+        run: echo "RELEASE_VERSION=${GITHUB_REF/refs\/tags\/v/}" >> $GITHUB_OUTPUT
 
       - name: Request release from JitPack to trigger build
         run: |
-          JITPACK_URL="https://jitpack.io/com/github/jimschubert/docker-parser/${{ steps.get_version.outputs.VERSION }}/"
+          JITPACK_URL="https://jitpack.io/com/github/jimschubert/docker-parser/${{ steps.get_version.outputs.RELEASE_VERSION }}/"
           curl -X POST -s -m 30 ${JITPACK_URL} || true
