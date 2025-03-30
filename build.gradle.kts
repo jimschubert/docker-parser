@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.jimschubert"
-version = "1.0-SNAPSHOT"
+version = project.findProperty("version") as String
 
 repositories {
     mavenCentral()
