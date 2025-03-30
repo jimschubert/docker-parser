@@ -8,6 +8,7 @@ version = project.findProperty("version") as String
 
 repositories {
     mavenCentral()
+    maven { url = uri("https://jitpack.io") }
 }
 
 java {
