@@ -145,9 +145,4 @@ class DockerfileParserTest {
         assertEquals("APP_HOME", envInstruction.getVariables().get(0).getKey());
         assertEquals("/app", envInstruction.getVariables().get(0).getValue());
     }
-
-    @Test
-    void testExampleDockerfile() throws Exception {
-
-    }
 }
