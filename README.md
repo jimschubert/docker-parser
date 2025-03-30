@@ -1,5 +1,9 @@
 # docker-parser
 
+[![Apache 2.0 License](https://img.shields.io/badge/License-Apache%202.0-blue)](./LICENSE)
+[![Build](https://github.com/jimschubert/docker-parser/actions/workflows/build.yml/badge.svg)](https://github.com/jimschubert/docker-parser/actions/workflows/build.yml)
+[![Release](https://github.com/jimschubert/docker-parser/actions/workflows/release.yml/badge.svg)](https://github.com/jimschubert/docker-parser/actions/workflows/release.yml)
+
 A simple parser for Dockerfiles for Java 17+.
 It can parse a Dockerfile and return a list of instructions, each representing a command in the Dockerfile.
 
