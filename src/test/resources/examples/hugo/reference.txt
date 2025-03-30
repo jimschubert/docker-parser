@@ -1,0 +1,1 @@
+https://github.com/gohugoio/hugo/blob/c15ebce2fd9cf0427e89578389f298a83be95728/Dockerfile
